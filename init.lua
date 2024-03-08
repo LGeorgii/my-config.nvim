@@ -149,7 +149,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 15
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -417,6 +417,8 @@ require('lazy').setup({
 
         opts.desc = 'Show documentation for what is under cursor'
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+
+        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
       end
 
       lspconfig['sourcekit'].setup {
@@ -548,7 +550,7 @@ require('lazy').setup({
     end,
   },
 
-  -- Xcodebuild plugin
+  -- xcodebuild
   {
     'wojciech-kulik/xcodebuild.nvim',
     dependencies = {
@@ -568,6 +570,36 @@ require('lazy').setup({
         vim.keymap.set('n', '<leader>xd', '<cmd>XcodebuildSelectDevice<cr>', { desc = 'Select Device' }),
       }
     end,
+  },
+
+  -- nvim-tree
+  {
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup {
+        sort = {
+          sorter = "case_sensitive",
+        },
+        view = {
+          width = 30,
+        },
+        renderer = {
+          group_empty = true,
+        },
+        filters = {
+          dotfiles = true,
+        },
+      }
+    end,
+  },
+
+  {
+    'nvim-tree/nvim-web-devicons',
   },
 
   { -- You can easily change to a different colorscheme.
