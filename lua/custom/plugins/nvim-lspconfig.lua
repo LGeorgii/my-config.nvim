@@ -2,8 +2,11 @@ return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
-    "hrsh7th/cmp-nvim-lsp",
-    { "antosha417/nvim-lsp-file-operations", config = true },
+    "hrsh7th/cmp-nvim-lsp",                  -- nvim-cmp source for neovim's built-in language server client.
+    {
+      "antosha417/nvim-lsp-file-operations", -- Adds support for file operations using built-in LSP support.
+      config = true
+    },
   },
   config = function()
     vim.api.nvim_create_autocmd('LspAttach', {

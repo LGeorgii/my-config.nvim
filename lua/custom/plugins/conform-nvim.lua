@@ -1,13 +1,14 @@
 return {
-  'stevearc/conform.nvim',
+  'stevearc/conform.nvim', -- Auto formatter.
   opts = {
-    notify_on_error = false,
+    notify_on_error = true,
     format_on_save = {
       timeout_ms = 500,
       lsp_fallback = true,
     },
     formatters_by_ft = {
       lua = { 'stylua' },
+      swift = { 'swiftformat' }
     },
   },
 }

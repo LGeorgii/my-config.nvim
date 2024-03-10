@@ -1,6 +1,5 @@
 return {
-  "j-hui/fidget.nvim",
-
+  "j-hui/fidget.nvim", -- Notification window.
   config = function()
     require("fidget").setup({
       notification = {

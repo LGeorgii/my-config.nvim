@@ -1,6 +1,4 @@
 return {
-  -- "gc" to comment visual regions/lines
-  'numToStr/Comment.nvim',
+  'numToStr/Comment.nvim', -- "gc" to comment visual regions/lines.
   opts = {}
 }
-
