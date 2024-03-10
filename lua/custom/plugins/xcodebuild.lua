@@ -4,7 +4,7 @@ return {
   "wojciech-kulik/xcodebuild.nvim",
   dependencies = {
     "nvim-telescope/telescope.nvim",
-    "MunifTanjim/nui.nvim",
+    "MunifTanjim/nui.nvim", -- UI Component Library for Neovim.
   },
   config = function()
     require("xcodebuild").setup({
@@ -13,7 +13,7 @@ return {
         auto_open_on_success_tests = false,
         auto_open_on_failed_tests = false,
         auto_open_on_success_build = false,
-        auto_open_on_failed_build = true,
+        auto_open_on_failed_build = false,
         auto_focus = false,
         auto_close_on_app_launch = true,
         only_summary = true,
@@ -31,9 +31,7 @@ return {
               if vim.trim(message) ~= "" then
                 fidget.notify(message, severity)
               end
-            
             end
-
           else
             fidget.notify(message, severity)
           end
@@ -58,7 +56,6 @@ return {
       },
     })
 
-    -- stylua: ignore start
     vim.keymap.set("n", "<leader>X", "<cmd>XcodebuildPicker<cr>", { desc = "Show Xcodebuild Actions" })
     vim.keymap.set("n", "<leader>xf", "<cmd>XcodebuildProjectManager<cr>", { desc = "Show Project Manager Actions" })
 
