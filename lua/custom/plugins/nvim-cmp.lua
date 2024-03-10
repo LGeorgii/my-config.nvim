@@ -28,7 +28,8 @@ return {
       mapping = cmp.mapping.preset.insert({
         ["<C-p>"] = cmp.mapping.select_prev_item(),
         ["<C-n>"] = cmp.mapping.select_next_item(),
-        ["<C-c>"] = cmp.mapping.complete(),
+        ["<C-Space>"] = cmp.mapping.complete(),
+        ["<C-c>"] = cmp.mapping.abort(),
         ["<C-y>"] = cmp.mapping.confirm({ select = false, behavior = cmp.ConfirmBehavior.Replace }),
       }),
       sources = cmp.config.sources({
