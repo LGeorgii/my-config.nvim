@@ -73,6 +73,7 @@ return {
         end
       end,
     })
+
     local lspconfig = require("lspconfig")
     local util = require("lspconfig.util")
     local cmp_nvim_lsp = require("cmp_nvim_lsp")
@@ -87,6 +88,33 @@ return {
       opts.desc = "Show documentation for what is under cursor"
       vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
     end
+
+    lspconfig["lua_ls"].setup({
+      -- cmd = {...},
+      -- filetypes { ...},
+      -- capabilities = {},
+      settings = {
+        Lua = {
+          runtime = { version = 'LuaJIT' },
+          workspace = {
+            checkThirdParty = false,
+            -- Tells lua_ls where to find all the Lua files that you have loaded
+            -- for your neovim configuration.
+            library = {
+              '${3rd}/luv/library',
+              unpack(vim.api.nvim_get_runtime_file('', true)),
+            },
+            -- If lua_ls is really slow on your computer, you can try this instead:
+            -- library = { vim.env.VIMRUNTIME },
+          },
+          completion = {
+            callSnippet = 'Replace',
+          },
+          -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
+          -- diagnostics = { disable = { 'missing-fields' } },
+        },
+      },
+    })
 
     lspconfig["sourcekit"].setup({
       capabilities = capabilities,
@@ -106,9 +134,11 @@ return {
 
     -- nice icons
     local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
+
     for type, icon in pairs(signs) do
       local hl = "DiagnosticSign" .. type
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     end
+
   end,
 }
