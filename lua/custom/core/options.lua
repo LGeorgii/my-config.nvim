@@ -18,3 +18,4 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.inccommand = 'split'
 vim.opt.scrolloff = 15
 vim.opt.hlsearch = true
+vim.opt.swapfile = false
