@@ -21,6 +21,8 @@ return {
     'rafamadriz/friendly-snippets', -- Snippets collection for a set of different programming languages.
   },
   config = function()
+    require('luasnip.loaders.from_vscode').lazy_load()
+
     local cmp = require 'cmp'
     local luasnip = require 'luasnip'
 
