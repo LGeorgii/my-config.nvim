@@ -37,7 +37,6 @@ return {
           { "filename" },
         },
         lualine_b = {
-          { "diagnostics" },
           { "diff" },
           {
             "searchcount",
