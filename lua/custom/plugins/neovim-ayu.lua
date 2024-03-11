@@ -1,6 +1,6 @@
 return {
   'Shatur/neovim-ayu',
-  mirage = true,
+  mirage = false,
   config = function()
     require('ayu').setup({
       overrides = function()
