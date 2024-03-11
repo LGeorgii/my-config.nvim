@@ -4,6 +4,8 @@ return {
     "nvim-tree/nvim-web-devicons" -- Provides icons and colors for each icon.
   },
   config = function()
+    require('ayu').colorscheme()
+
     local nvimtree = require("nvim-tree")
 
     vim.g.loaded_netrw = 1

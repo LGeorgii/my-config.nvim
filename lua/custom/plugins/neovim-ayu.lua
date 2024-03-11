@@ -1,7 +1,6 @@
 return {
   'Shatur/neovim-ayu',
   mirage = true,
-  overrides = {},
   config = function()
     require('ayu').setup({
       overrides = function()
@@ -12,7 +11,5 @@ return {
         end
       end
     })
-
-    require('ayu').colorscheme()
   end
 }
