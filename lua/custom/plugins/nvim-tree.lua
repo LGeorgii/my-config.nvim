@@ -1,19 +1,19 @@
 return {
-  "nvim-tree/nvim-tree.lua",
+  'nvim-tree/nvim-tree.lua',
   dependencies = {
-    "nvim-tree/nvim-web-devicons" -- Provides icons and colors for each icon.
+    'nvim-tree/nvim-web-devicons',
   },
   config = function()
     require('ayu').colorscheme()
 
-    local nvimtree = require("nvim-tree")
+    local nvimtree = require 'nvim-tree'
 
     vim.g.loaded_netrw = 1
     vim.g.loaded_netrwPlugin = 1
 
-    vim.cmd([[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]])
+    vim.cmd [[ highlight NvimTreeIndentMarker guifg=#3FC5FF ]]
 
-    nvimtree.setup({
+    nvimtree.setup {
       notify = {
         threshold = vim.log.levels.WARN,
       },
@@ -28,8 +28,8 @@ return {
         icons = {
           glyphs = {
             folder = {
-              arrow_closed = "",
-              arrow_open = "",
+              arrow_closed = '',
+              arrow_open = '',
             },
           },
         },
@@ -44,7 +44,7 @@ return {
         },
       },
       filters = {
-        custom = { ".DS_Store" },
+        custom = { '.DS_Store' },
       },
       git = {
         ignore = false,
@@ -53,10 +53,10 @@ return {
         enable = true,
         update_root = false,
       },
-    })
+    }
 
     local keymap = vim.keymap
 
-    keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
+    keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle file explorer' })
   end,
 }
