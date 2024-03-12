@@ -4,8 +4,6 @@ return {
     'nvim-tree/nvim-web-devicons',
   },
   config = function()
-    require('ayu').colorscheme()
-
     require('nvim-web-devicons').setup {
       override = {
         zsh = {
