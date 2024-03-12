@@ -5,7 +5,6 @@ vim.opt.mouse = 'a'
 vim.opt.showmode = false
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.undofile = true
-vim.opt.breakindent = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.signcolumn = 'yes'
