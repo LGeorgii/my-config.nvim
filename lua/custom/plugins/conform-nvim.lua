@@ -10,6 +10,7 @@ return {
       lua = { 'stylua' },
       javascript = { 'prettier' },
       html = { 'prettier' },
+      css = { 'prettier' },
     },
   },
 }
