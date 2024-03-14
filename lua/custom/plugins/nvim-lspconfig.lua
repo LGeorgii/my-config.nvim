@@ -75,6 +75,8 @@ return {
 
     local servers = {
       tsserver = {},
+      html = {},
+      cssls = {},
       lua_ls = {
         settings = {
           Lua = {
