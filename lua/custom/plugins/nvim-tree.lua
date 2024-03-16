@@ -12,6 +12,7 @@ return {
           name = 'Gitignore',
         },
       },
+      strict = true,
     }
 
     local nvimtree = require 'nvim-tree'
