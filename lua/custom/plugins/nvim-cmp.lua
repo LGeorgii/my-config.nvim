@@ -30,8 +30,14 @@ return {
 
     cmp.setup {
       window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered(),
+        completion = {
+          border = 'rounded',
+          winhighlight = 'Normal:TelescopeNormal,FloatBorder:TelescopePromptBorder,CursorLine:PmenuSel,Search:None',
+        },
+        documentation = {
+          border = 'rounded',
+          winhighlight = 'Normal:TelescopeNormal,FloatBorder:TelescopePromptBorder,CursorLine:PmenuSel,Search:None',
+        },
       },
       snippet = {
         expand = function(args)
