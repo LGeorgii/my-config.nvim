@@ -19,7 +19,7 @@ return {
           fg = '#82A0F1',
         }
       end,
-      transparent = true,
+      -- transparent = true,
       styles = {
         comments = { italic = false },
         keywords = { italic = false },
