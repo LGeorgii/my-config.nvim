@@ -2,12 +2,17 @@ return {
   'folke/tokyonight.nvim',
   priority = 1000,
   init = function()
+    require('lspconfig.ui.windows').default_options.border = 'rounded'
+
     require('tokyonight').setup {
-      on_highlights = function(hl, c)
+      on_highlights = function(hl)
         hl.TelescopeBorder = {
           fg = '#82A0F1',
         }
         hl.TelescopePromptBorder = {
+          fg = '#82A0F1',
+        }
+        hl.LspInfoBorder = {
           fg = '#82A0F1',
         }
       end,
