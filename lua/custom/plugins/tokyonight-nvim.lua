@@ -5,17 +5,14 @@ return {
     require('lspconfig.ui.windows').default_options.border = 'rounded'
 
     require('tokyonight').setup {
-      on_highlights = function(hl, c)
+      on_highlights = function(hl)
         hl.TelescopeBorder = {
-          bg = c.bg_dark,
           fg = '#82A0F1',
         }
         hl.TelescopePromptBorder = {
-          bg = c.bg_dark,
           fg = '#82A0F1',
         }
         hl.LspInfoBorder = {
-          bg = c.bg_dark,
           fg = '#82A0F1',
         }
       end,
