@@ -4,23 +4,10 @@ return {
   init = function()
     require('tokyonight').setup {
       on_highlights = function(hl, c)
-        hl.TelescopeNormal = {
-          fg = c.fg_dark,
-        }
         hl.TelescopeBorder = {
           fg = '#82A0F1',
         }
-        hl.TelescopePromptNormal = {}
         hl.TelescopePromptBorder = {
-          fg = '#82A0F1',
-        }
-        hl.TelescopePromptTitle = {
-          fg = '#82A0F1',
-        }
-        hl.TelescopePreviewTitle = {
-          fg = '#82A0F1',
-        }
-        hl.TelescopeResultsTitle = {
           fg = '#82A0F1',
         }
       end,
