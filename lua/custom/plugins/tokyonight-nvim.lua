@@ -5,7 +5,21 @@ return {
     require('lspconfig.ui.windows').default_options.border = 'rounded'
 
     require('tokyonight').setup {
+      on_colors = function(colors)
+        colors.bg = '#0c0f20'
+        colors.bg_dark = '#0c0f20'
+      end,
+
       on_highlights = function(hl)
+        hl.NvimTreeNormal = {
+          bg = '#0c0f20',
+        }
+        hl.NvimTreeNormalNC = {
+          bg = '#0c0f20',
+        }
+        hl.TelescopeNormal = {
+          bg = '#0c0f20',
+        }
         hl.TelescopeBorder = {
           fg = '#82A0F1',
         }
@@ -28,7 +42,7 @@ return {
     }
 
     -- vim.cmd.colorscheme 'tokyonight-moon'
-    vim.cmd.colorscheme 'tokyonight-night'
+    vim.cmd.colorscheme 'tokyonight'
     vim.cmd.hi 'Comment gui=none'
   end,
 }
