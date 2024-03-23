@@ -11,15 +11,15 @@ return {
         colors.bg_sidebar = '#101425'
       end,
 
-      on_highlights = function(hl)
+      on_highlights = function(hl, c)
         hl.NvimTreeNormal = {
-          bg = '#11131e',
+          bg = c.bg_dark,
         }
         hl.NvimTreeNormalNC = {
-          bg = '#11131e',
+          bg = c.bg_dark,
         }
         hl.TelescopeNormal = {
-          bg = '#11131e',
+          bg = c.bg_dark,
         }
         hl.TelescopeBorder = {
           fg = '#82A0F1',
