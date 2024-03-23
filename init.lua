@@ -1,2 +1,5 @@
-require("custom.core")
-require("custom.lazy")
+vim.opt.termguicolors = true
+
+require 'custom.core'
+require 'custom.lazy'
+
