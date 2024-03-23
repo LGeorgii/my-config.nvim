@@ -6,19 +6,20 @@ return {
 
     require('tokyonight').setup {
       on_colors = function(colors)
-        colors.bg = '#0c0f20'
-        colors.bg_dark = '#0c0f20'
+        colors.bg = '#11131e'
+        colors.bg_dark = '#11131e'
+        colors.bg_sidebar = '#101425'
       end,
 
       on_highlights = function(hl)
         hl.NvimTreeNormal = {
-          bg = '#0c0f20',
+          bg = '#11131e',
         }
         hl.NvimTreeNormalNC = {
-          bg = '#0c0f20',
+          bg = '#11131e',
         }
         hl.TelescopeNormal = {
-          bg = '#0c0f20',
+          bg = '#11131e',
         }
         hl.TelescopeBorder = {
           fg = '#82A0F1',
