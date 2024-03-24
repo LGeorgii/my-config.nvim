@@ -37,3 +37,9 @@ vim.opt.scrolloff = 15
 vim.opt.hlsearch = true
 
 vim.opt.swapfile = false
+
+vim.opt.termguicolors = true
+
+vim.g.python3_host_prog = '/opt/homebrew/bin/python3'
+-- To silence warning related to perl provider.
+vim.g.loaded_perl_provider = 0
