@@ -1,8 +1,6 @@
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.g.have_nerd_font = true
-
 vim.opt.mouse = 'a'
 
 vim.opt.showmode = false
@@ -38,6 +36,7 @@ vim.opt.hlsearch = true
 
 vim.opt.swapfile = false
 
+vim.g.have_nerd_font = true
 vim.opt.termguicolors = true
 
 vim.g.python3_host_prog = '/opt/homebrew/bin/python3'
