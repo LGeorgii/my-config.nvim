@@ -4,9 +4,7 @@ return {
     require('colorizer').setup {
       'css',
       'javascript',
-      html = {
-        mode = 'foreground',
-      },
+      'html',
     }
   end,
 }

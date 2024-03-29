@@ -2,28 +2,14 @@ return {
   'hrsh7th/nvim-cmp',
   event = 'InsertEnter',
   dependencies = {
-    {
-      'L3MON4D3/LuaSnip', -- Snippet Engine.
-      build = (function()
-        -- Build Step is needed for regex support in snippets.
-        -- This step is not supported in many windows environments.
-        -- Remove the below condition to re-enable on windows.
-        if vim.fn.has 'win32' == 1 or vim.fn.executable 'make' == 0 then
-          return
-        end
-
-        return 'make install_jsregexp'
-      end)(),
-    },
-    'saadparwaiz1/cmp_luasnip',     -- LuaSnip completion source for nvim-cmp.
     'hrsh7th/cmp-nvim-lsp',         -- nvim-cmp source for neovim's built-in language server client.
     'hrsh7th/cmp-path',             -- nvim-cmp source for filesystem paths.
+    'saadparwaiz1/cmp_luasnip',     -- LuaSnip completion source for nvim-cmp.
     'rafamadriz/friendly-snippets', -- Snippets collection for a set of different programming languages.
+    'L3MON4D3/LuaSnip',
     {
       "jdrupal-dev/css-vars.nvim",
-      branch = "cmp-source", -- Important to use this branch.
-      opts = {},
-
+      branch = "cmp-source",
     },
   },
   config = function()

@@ -3,7 +3,7 @@ return {
   event = 'VimEnter',
   branch = '0.1.x',
   dependencies = {
-    'nvim-lua/plenary.nvim', -- A Lua module for asynchronous programming using coroutines.
+    'nvim-lua/plenary.nvim',
     {
       'nvim-telescope/telescope-fzf-native.nvim',
 
@@ -49,7 +49,7 @@ return {
 
     vim.keymap.set('n', '<leader>/', function()
       builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
-        winblend = 20,
+        winblend = 0,
         previewer = false,
       })
     end, { desc = '[/] Fuzzily search in current buffer' })
