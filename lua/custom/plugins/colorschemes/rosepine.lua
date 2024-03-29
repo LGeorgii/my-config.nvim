@@ -4,7 +4,7 @@ return {
   priority = 1000,
   init = function()
     require('rose-pine').setup {
-      variant = 'moon', -- auto, main, moon, or dawn
+      variant = 'main', -- auto, main, moon, or dawn
 
       styles = {
         bold = false,
@@ -14,7 +14,7 @@ return {
     }
 
     -- vim.cmd.colorscheme 'rose-pine'
-
+    --
     -- require('lualine').setup {
     --   options = {
     --     theme = 'rose-pine',
