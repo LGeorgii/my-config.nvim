@@ -5,7 +5,7 @@ vim.opt.mouse = 'a'
 
 vim.opt.showmode = false
 
-vim.opt.clipboard = 'unnamedplus'
+-- vim.opt.clipboard = 'unnamedplus'
 vim.opt.undofile = true
 
 vim.opt.shiftwidth = 4
@@ -38,7 +38,3 @@ vim.opt.swapfile = false
 
 vim.g.have_nerd_font = true
 vim.opt.termguicolors = true
-
-vim.g.python3_host_prog = '/opt/homebrew/bin/python3'
--- To silence warning related to perl provider.
-vim.g.loaded_perl_provider = 0
