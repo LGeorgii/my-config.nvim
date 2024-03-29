@@ -15,10 +15,16 @@ return {
         return 'make install_jsregexp'
       end)(),
     },
-    'saadparwaiz1/cmp_luasnip', -- LuaSnip completion source for nvim-cmp.
-    'hrsh7th/cmp-nvim-lsp', -- nvim-cmp source for neovim's built-in language server client.
-    'hrsh7th/cmp-path', -- nvim-cmp source for filesystem paths.
+    'saadparwaiz1/cmp_luasnip',     -- LuaSnip completion source for nvim-cmp.
+    'hrsh7th/cmp-nvim-lsp',         -- nvim-cmp source for neovim's built-in language server client.
+    'hrsh7th/cmp-path',             -- nvim-cmp source for filesystem paths.
     'rafamadriz/friendly-snippets', -- Snippets collection for a set of different programming languages.
+    {
+      "jdrupal-dev/css-vars.nvim",
+      branch = "cmp-source", -- Important to use this branch.
+      opts = {},
+
+    },
   },
   config = function()
     require('luasnip.loaders.from_vscode').lazy_load()
@@ -66,6 +72,7 @@ return {
         { name = 'nvim_lsp' },
         { name = 'luasnip' },
         { name = 'path' },
+        { name = "css_vars" },
       },
     }
   end,
