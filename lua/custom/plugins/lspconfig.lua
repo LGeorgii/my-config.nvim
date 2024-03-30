@@ -1,7 +1,3 @@
-function myFunction(argument1, argument2)
-  console.log("heelll")
-end
-
 return {
   'neovim/nvim-lspconfig',
   dependencies = {
