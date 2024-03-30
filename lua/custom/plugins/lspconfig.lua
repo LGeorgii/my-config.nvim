@@ -1,3 +1,7 @@
+function myFunction(argument1, argument2)
+  console.log("heelll")
+end
+
 return {
   'neovim/nvim-lspconfig',
   dependencies = {
@@ -73,7 +77,13 @@ return {
     capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
     local servers = {
-      tsserver = {},
+      tsserver = {
+        settings = {
+          completions = {
+            completeFunctionCalls = true
+          },
+        }
+      },
       html = {},
       cssls = {},
       lua_ls = {
