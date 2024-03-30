@@ -13,12 +13,12 @@ return {
       },
     }
 
-    -- vim.cmd.colorscheme 'catppuccin'
-    --
-    -- require('lualine').setup {
-    --   options = {
-    --     theme = 'catpuccin',
-    --   },
-    -- }
+    vim.cmd.colorscheme 'catppuccin'
+
+    require('lualine').setup {
+      options = {
+        theme = 'catppuccin',
+      },
+    }
   end,
 }
