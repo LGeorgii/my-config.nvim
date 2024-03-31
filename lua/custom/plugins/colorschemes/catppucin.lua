@@ -11,6 +11,11 @@ return {
         nvimtree = true,
         treesitter = true,
       },
+      custom_highlights = function(colors)
+        return {
+          NormalFloat = { bg = colors.none },
+        }
+      end,
     }
 
     vim.cmd.colorscheme 'catppuccin'
