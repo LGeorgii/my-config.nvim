@@ -5,20 +5,11 @@ return {
   init = function()
     require('rose-pine').setup {
       variant = 'main', -- auto, main, moon, or dawn
-
       styles = {
         bold = false,
-        italic = false,
+        italic = true,
         transparency = false,
       },
     }
-
-    -- vim.cmd.colorscheme 'rose-pine'
-    --
-    -- require('lualine').setup {
-    --   options = {
-    --     theme = 'rose-pine',
-    --   },
-    -- }
   end,
 }
