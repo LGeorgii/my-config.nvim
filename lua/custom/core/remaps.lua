@@ -1,7 +1,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.api.nvim_set_keymap('n', '<leader>t', ':Explore<CR>')
+vim.api.nvim_set_keymap('n', '<leader>t', ':Explore<CR>', { noremap = true, silent = true })
 
 vim.keymap.set('n', '<C-c>', '<cmd>nohlsearch<CR>')
 
