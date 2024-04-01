@@ -1,4 +1,5 @@
 return {
+  -- some comment
   'folke/tokyonight.nvim',
   priority = 1000,
   init = function()
@@ -15,15 +16,15 @@ return {
         }
         hl.TelescopeBorder = {
           bg = c.bg_dark,
-          fg = '#c0caf4',
+          fg = '#565f89',
         }
         hl.TelescopePromptBorder = {
           bg = c.bg_dark,
-          fg = '#c0caf4',
+          fg = '#565f89',
         }
         hl.LspInfoBorder = {
           bg = c.bg_dark,
-          fg = '#c0caf4',
+          fg = '#565f89',
         }
       end,
     }
