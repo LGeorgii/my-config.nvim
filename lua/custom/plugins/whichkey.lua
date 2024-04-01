@@ -3,10 +3,10 @@ return {
   event = 'VimEnter',
   config = function()
     require('which-key').setup {
-      window = {
-        border = 'rounded',
-        margin = { 0, 0, 1, 0 },
-      },
+      -- window = {
+      --   border = 'rounded',
+      --   margin = { 0, 0, 1, 0 },
+      -- },
       show_help = false,
     }
 
