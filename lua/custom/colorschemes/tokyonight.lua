@@ -15,15 +15,15 @@ return {
         }
         hl.TelescopeBorder = {
           bg = c.bg_dark,
-          fg = '#82A0F1',
+          fg = '#c0caf4',
         }
         hl.TelescopePromptBorder = {
           bg = c.bg_dark,
-          fg = '#82A0F1',
+          fg = '#c0caf4',
         }
         hl.LspInfoBorder = {
           bg = c.bg_dark,
-          fg = '#82A0F1',
+          fg = '#c0caf4',
         }
       end,
 
