@@ -8,6 +8,7 @@ return {
       handler_opts = {
         border = 'none', -- double, rounded, single, shadow, none, or a table of borders
       },
+      hi_parameter = 'String',
     }
   end,
 }
