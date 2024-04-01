@@ -26,13 +26,6 @@ return {
           fg = '#c0caf4',
         }
       end,
-
-      styles = {
-        comments = { italic = true },
-        keywords = { italic = true },
-        functions = {},
-        variables = {},
-      },
     }
   end,
 }

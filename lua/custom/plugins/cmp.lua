@@ -40,16 +40,6 @@ return {
     luasnip.config.setup {}
 
     cmp.setup {
-      -- window = {
-      --   completion = {
-      --     border = 'rounded',
-      --     winhighlight = 'Normal:TelescopeNormal,FloatBorder:TelescopePromptBorder,CursorLine:PmenuSel,Search:None',
-      --   },
-      --   documentation = {
-      --     border = 'rounded',
-      --     winhighlight = 'Normal:TelescopeNormal,FloatBorder:TelescopePromptBorder,CursorLine:PmenuSel,Search:None',
-      --   },
-      -- },
       snippet = {
         expand = function(args)
           luasnip.lsp_expand(args.body)
