@@ -11,4 +11,4 @@ function SetColorScheme(colorScheme)
   }
 end
 
-SetColorScheme 'catppuccin'
+SetColorScheme 'tokyonight-night'
