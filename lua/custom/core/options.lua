@@ -38,3 +38,5 @@ vim.opt.swapfile = false
 
 vim.g.have_nerd_font = true
 vim.opt.termguicolors = true
+
+vim.cmd [[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']]
