@@ -17,6 +17,7 @@ vim.keymap.set('n', '<leader>ll', '<cmd>Lazy<CR>', { desc = 'Opens Lazy' })
 
 require('lazy').setup({
   { import = 'custom.plugins' },
+  { import = 'custom.colorschemes' },
 }, {
   checker = {
     enabled = true,
