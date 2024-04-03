@@ -39,4 +39,5 @@ vim.opt.swapfile = false
 vim.g.have_nerd_font = true
 vim.opt.termguicolors = true
 
+-- To show line number in netrw.
 vim.cmd [[let g:netrw_bufsettings = 'noma nomod nu nobl nowrap ro']]
